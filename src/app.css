@@ -6,7 +6,11 @@
 }
 
 body {
-  background-color: #000000;
+  background-color: #f6f6f6;
   font: 14px sans-serif;
-  color: #fff;
+  color: #000;
+}
+
+main {
+  border: 1px white solid;
 }
