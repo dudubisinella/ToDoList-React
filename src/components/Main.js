@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function Main({ title }) {
+export default function Main({ title, children }) {
   return (
-    <header>
-      <h1> {title} </h1>
-    </header>
+    <main>
+      {children}
+    </main>
   );
 }

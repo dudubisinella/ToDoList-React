@@ -6,11 +6,15 @@
 }
 
 body {
-  background-color: #f6f6f6;
+  background-color: #E9967A;
   font: 14px sans-serif;
   color: #000;
 }
 
 main {
   border: 1px white solid;
+}
+
+input {
+  width: 200px;
 }

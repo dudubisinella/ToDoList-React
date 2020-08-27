@@ -8,11 +8,18 @@ import "./App.css";
 function App() {
   return (
     <>
-      <Header title="Projects" />
+      <Header title="To do List com React">
+        <div>
+          <ul></ul>
+        </div>
+      </Header>
 
-      <Main title="Projects" />
+      <Main>
+        <input type="text" placeholder="Digite Aqui" />
+        <button>Adicionar</button>
+      </Main>
 
-      <Footer title="Projects" />
+      <Footer title="Feito por Dama e Eduardo" />
     </>
   );
 }
