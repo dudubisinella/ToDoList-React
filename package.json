@@ -1,0 +1,8 @@
+{
+  "name": "ToDoList-React",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/dudubisinella/ToDoList-React.git",
+  "author": "Eduardo Bisinella <bisinella7@gmail.com>",
+  "license": "MIT"
+}
