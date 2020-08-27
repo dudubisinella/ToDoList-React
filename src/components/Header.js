@@ -1,10 +1,9 @@
 import React from "react";
 
-function Header() {
+export default function Header({ title }) {
   return (
     <header>
-      <h1>To Do List - REACTJS</h1>
+      <h1> {title} </h1>
     </header>
   );
 }
-export default Header;
