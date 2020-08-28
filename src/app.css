@@ -6,7 +6,61 @@
 }
 
 body {
-  background-color: #E9967A;
+  background-color: #e9967a;
   font: 14px sans-serif;
   color: #000;
+  /* display: grid;
+  justify-content: center;
+  align-content: center; */
+}
+
+header {
+  position: fixed;
+  top: 10px;
+  left: 40%;
+}
+
+main {
+  position: fixed;
+  top: 20vh;
+  left: 42%;
+}
+
+.input {
+  width: 40vh;
+  height: 5vh;
+  margin: 5px;
+  border: 2px black solid;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #555555;
+  border: none;
+  color: white;
+  padding: 10px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+footer {
+  position: fixed;
+  bottom: 20px;
+  left: 40%;
+}
+
+ul {
+  margin: 2px;
+}
+
+li {
+  text-align: center;
+  color: #111;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
 }
