@@ -10,11 +10,3 @@ body {
   font: 14px sans-serif;
   color: #000;
 }
-
-main {
-  border: 1px white solid;
-}
-
-input {
-  width: 200px;
-}
