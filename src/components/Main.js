@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Li from "./Li";
 
 function Main() {
   const [Lista, setLista] = useState([]);
@@ -43,12 +44,18 @@ function Main() {
 
         <ul>
           {Lista.map((eachLista) => (
-            <li key={eachLista.simpleId}>
-              <h2>
-                <b>{eachLista.owner}: </b>
-                {eachLista.novaTarefa}.
-              </h2>
-            </li>
+            <Li
+              id={eachLista.simpleId}
+              owner={eachLista.owner}
+              novaTarefa={eachLista.novaTarefa}
+            />
+
+            // <li key={eachLista.simpleId}>
+            //   <h2>
+            //     <b>{eachLista.owner}: </b>
+            //     {eachLista.novaTarefa}.
+            //   </h2>
+            // </li>
           ))}
         </ul>
       </main>
