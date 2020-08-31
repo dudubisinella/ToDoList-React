@@ -49,13 +49,6 @@ function Main() {
               owner={eachLista.owner}
               novaTarefa={eachLista.novaTarefa}
             />
-
-            // <li key={eachLista.simpleId}>
-            //   <h2>
-            //     <b>{eachLista.owner}: </b>
-            //     {eachLista.novaTarefa}.
-            //   </h2>
-            // </li>
           ))}
         </ul>
       </main>
