@@ -7,6 +7,7 @@ export default function Li({ Id, owner, novaTarefa }) {
         <b>{owner}: </b>
         {novaTarefa}.
       </h2>
+      <button>Excluir</button>
     </li>
   );
 }
