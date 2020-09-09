@@ -1,43 +1,23 @@
 import React, { useState } from "react";
-// import Li from "./Li";
+import Li from "./Li";
 
 function Main() {
-  const [Lista, setLista] = useState([]);
+  const [tarefas, setTarefas] = useState([]);
   const [novaTarefa, setnovaTarefa] = useState("");
   const [owner, setOwner] = useState("");
 
   function addNovaLista() {
-    const listas = { novaTarefa, owner, Id: `${Date.now()}` };
+    const novaTarefa = { novaTarefa, owner, Id: `${Date.now()}` };
 
-    setLista([...Lista, listas]);
+    setTarefas([...tarefas, novaTarefa]);
     setnovaTarefa("");
     setOwner("");
-    // console.log(Lista);
   }
 
   function Delete(id) {
-    setLista(
-      Lista.filter((lista) => lista.id !== id),
-      ...Lista
-    );
-    // console.log(Lista.Id);
-    // //copy list
-    // setLista(
-    //   ...Lista,
-    //   Lista.filter((lista) => lista.id !== id)
-    // Lista.filter((lista) => lista.id !== id),
-    //   ...Lista
-    // );
-    // setProjects(projects.filter((project) => project.id !== projectId));
-    // //filter out deleted object
-    // //remember that the list (each object) gets assigned a value and id when its added to list
-    // const updatedList = list.filter((item) => item.id !== id);
-
-    // //update state
-    // this.setState({ Lista: updatedList });
+    setTarefas(tarefas.filter((tarefa) => tarefa.Id !== id));
   }
   return (
-
     <main>
       <input
         className="input"
@@ -57,34 +37,24 @@ function Main() {
       <br />
       <button type="button" onClick={addNovaLista}>
         Adicionar!
-          </button>
+      </button>
       <br />
 
       <h2>{owner}</h2>
       <h3>{novaTarefa}</h3>
 
       <ul>
-        {Lista.map((eachLista) => (
-          // <Li
-          //   id={eachLista.simpleId}
-          //   owner={eachLista.owner}
-          //   novaTarefa={eachLista.novaTarefa}
-          // />
-
-          <li key={eachLista.Id}>
-            <h2>
-              <b>{eachLista.owner}: </b>
-              {eachLista.novaTarefa}.
-                </h2>
-            <button onClick={() => Delete(eachLista.id)}>Delete</button>
-          </li>
+        {tarefas.map((Tarefa) => (
+          <Li
+            id={Tarefa.Id}
+            owner={Tarefa.owner}
+            novaTarefa={Tarefa.novaTarefa}
+            func={() => Delete(Tarefa.Id)}
+          />
         ))}
       </ul>
     </main>
-
   );
 }
-
-
 
 export default Main;
